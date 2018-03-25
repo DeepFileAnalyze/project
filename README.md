@@ -2,7 +2,8 @@
 Extracts text from pdf files and visualizes natural language content.
 
 
-# Setup 
-1. Install Python3 Libraries: ```virtualenv env && source env/bin/activate && pip install pyocr whoosh wand```
-2. Put pdf files into ```out/pdfs```
+# Setup example
+0. Install tesseract: https://github.com/tesseract-ocr/tesseract
+1. Install Python3 Libraries: ```virtualenv env && source env/bin/activate && pip install textract PyPDF2 whoosh```
+2. Put example pdf files from ```example``` into ```out/pdfs```
 3. Execute: ```python pdfparser```
