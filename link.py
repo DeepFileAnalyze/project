@@ -7,12 +7,15 @@ def koord_def(raum) :
     k = 0
     raum["links"] = []
     for word in raum["nodes"]:
-        print(word)
         j = 0
         for word1 in raum["nodes"]:
             if i == j :
                 continue
-                print(word["desc"])
+            if  not word.__contains__("desc"):
+                print(word)
+                word["desc"] = "Sample text"
+            if  not word1.__contains__("desc"):
+                word1["desc"] = "Sample text"
             if word1["name"] in word["desc"]:
                 er = {}
                 er["value"] = 1
